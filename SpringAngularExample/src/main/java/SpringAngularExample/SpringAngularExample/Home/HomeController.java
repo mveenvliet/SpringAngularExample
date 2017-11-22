@@ -1,4 +1,4 @@
-package Home;
+package SpringAngularExample.SpringAngularExample.Home;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

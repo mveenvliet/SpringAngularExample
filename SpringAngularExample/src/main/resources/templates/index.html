@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-resource.min.js">
+    </script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="../static/JavaScript/Home.js"
+	th:src="@{/JavaScript/Home.js}"></script>
 <head>
 <meta charset="utf-8"></meta>
 <meta name="viewport" content="width=device-width"></meta>
 <meta name="Home" content="Home Page"></meta>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
 <title>Home Page</title>
 </head>
-<script src="../static/JavaScript/Home.js" th:src="@{/JavaScript/Home.js}"></script>
+
 <body data-ng-app="app" data-ng-controller="controller">
-	<p data-ng-bind="text" >Test</p>
-	<button type="button" class="btn btn-primary" data-ng-click="Testfunction()">Primary</button>
+	<p data-ng-bind="text">Test</p>
+	<button type="button" class="btn btn-primary"
+		data-ng-click="Testfunction()">Primary</button>
 </body>
 </html>

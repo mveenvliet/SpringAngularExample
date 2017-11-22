@@ -1,9 +1,9 @@
-
 var app = angular.module('app', []);
 
-app.controller('controller', function($scope) {
+app.controller('controller', function($scope, $http, $location) {
 	$scope.Testfunction = function() {
 		$scope.text = "Test 123";
+		console.log("button pressed")
 		var config = {
 			headers : {
 				'Accept' : 'application/json'
@@ -11,12 +11,9 @@ app.controller('controller', function($scope) {
 		}
 		var data = {
 			number : 1
-		};
-		$
-			.get("Test", data, config).then(
+		}
+		$.get("Test", data, config).then(
 			function(response) {
-				var table = document
-					.getElementById("inventarisTbody");
 
 				console.log(response.data);
 				console.log(response);
